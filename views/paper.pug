@@ -6,4 +6,20 @@ html
 
 body
     main
-        img(src="/img/paper.png")
+
+
+        if status == "equal"
+            h1 Egalité
+            img(src="/img/paper.png")
+            img(src="/img/paper.png")
+
+        else if status == "fail"
+            h1 Vous avez perdu
+            img(src="/img/paper.png")
+            img(src="/img/scissors.png")
+
+
+        else if status == "victory"
+            h1 Vous avez gagné
+            img(src="/img/paper.png")
+            img(src="/img/rock.png")
